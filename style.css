@@ -1,0 +1,143 @@
+
+
+body {
+  color: #fff;
+  background-color: #000;
+}
+
+h1, h2, h3 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+  font-size: 39px;
+}
+
+h2 {
+  font-size: 31px;
+}
+
+p {
+  font-size: 25px;
+  font-family: 'Josefin Sans', cursive;
+}
+
+a {
+  font-size: 25px;
+  color: #fff;
+  font-family: 'Josefin Sans', cursive;
+  text-decoration: none;
+  outline: solid 4px #fff;
+  margin: 20px;
+  padding: 8px 20px;
+  transition: outline 0.2s linear;
+}
+
+a:hover {
+  outline-width: 8px;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 8px solid white;
+  position: absolute;
+  left: 50%;
+  margin-left: -88px;
+}
+
+.card-primary {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 92px;
+}
+
+
+.card-info {
+  padding-top: 88px;
+  text-align: center;
+  height: 200px;
+  border: 8px solid white;
+}
+
+.card-follow {
+  margin-top: 20px;
+  text-align: center;
+  height: 200px;
+  border: 8px solid white;
+  height: auto;
+  padding-bottom: 48px;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#illuminate {
+  transition: background-color 2s ease;
+  transition: color 2s ease;
+  transition: box-shadow 1s ease;
+}
+
+#light-bulb:hover {
+  cursor: help;
+}
+
+#light-bulb:hover ~ #illuminate {
+  background-color: yellow;
+  color: #000;
+  outline: 0px yellow;
+  box-shadow: 0px 0px 60px yellow;
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+
+  .links {
+    display: grid;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  #light-bulb {
+    padding-bottom: 16px;
+  }
+
+  .container {
+    width: 300px;
+  }
+
+  .card-info {
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 144px;
+  }
+
+  .card-follow {
+    padding-bottom: 0px;
+  }
+
+  h1 {
+  font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p, a {
+    font-size: 13px;
+  }
+}
